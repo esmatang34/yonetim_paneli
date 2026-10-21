@@ -1,0 +1,22 @@
+# Gizli bilgiler
+.env
+*.env
+!.env.example
+
+# Veritabanı yedekleri ve verileri
+mssql/backup/*
+!mssql/backup/.gitkeep
+*.bak
+*.sql
+*.dump
+*.sqlite
+*.sqlite3
+
+# n8n dışa aktarımları (kimlik bilgisi içerebilir)
+n8n/workflows*.json
+n8n/credentials*.json
+
+# Diğer
+node_modules/
+.DS_Store
+Thumbs.db
